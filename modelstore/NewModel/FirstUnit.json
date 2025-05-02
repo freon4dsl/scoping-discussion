@@ -1,0 +1,103 @@
+{
+   "serializationFormatVersion": "2023.1",
+   "languages": [
+      {
+         "key": "-key-calculator",
+         "version": "2023.1"
+      }
+   ],
+   "nodes": [
+      {
+         "id": "ID-2",
+         "classifier": {
+            "language": "-key-calculator",
+            "version": "2023.1",
+            "key": "-key-LanguageUnit"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-calculator",
+                  "version": "2023.1",
+                  "key": "-key-LanguageUnit-name"
+               },
+               "value": "FirstUnit"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-calculator",
+                  "version": "2023.1",
+                  "key": "-key-LanguageUnit-elements"
+               },
+               "children": [
+                  "ID-3",
+                  "ID-4"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": null
+      },
+      {
+         "id": "ID-3",
+         "classifier": {
+            "language": "-key-calculator",
+            "version": "2023.1",
+            "key": "-key-Element"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-calculator",
+                  "version": "2023.1",
+                  "key": "-key-Element-name"
+               },
+               "value": "First1"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-4",
+         "classifier": {
+            "language": "-key-calculator",
+            "version": "2023.1",
+            "key": "-key-Element"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-calculator",
+                  "version": "2023.1",
+                  "key": "-key-Element-name"
+               },
+               "value": "First2"
+            }
+         ],
+         "containments": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-calculator",
+                  "version": "2023.1",
+                  "key": "-key-Element-other"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "First1",
+                     "reference": "ID-3"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-2"
+      }
+   ]
+}
