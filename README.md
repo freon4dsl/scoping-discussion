@@ -1,5 +1,8 @@
 # README
 
+> [!IMPORTANT]
+> Does not work yet, need to publish Freon 1.1.0-beta.0 first.
+
 Project for discussing and experimenting with different ideas on scoping.
 
 ## Running the Application
