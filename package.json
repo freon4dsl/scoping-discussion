@@ -4,7 +4,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf node_modules/",
+    "initialize": "npm run clean && npm install && npm run build",
+    "clean": "rm -rf node_modules/ public/build/dist/ package.lock.json",
     "build": "npm run generate && tsc",
     "build-app": "vite build",
     "build-dev": "cd ../../packages/samples/CourseSchedule && npm run build",
