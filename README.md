@@ -2,6 +2,8 @@
 
 Project for discussing and experimenting with different ideas on scoping.
 
+Uses the beta version of Freon, which includes the update to Svelte 5.
+
 ## Running the Application
 
 First install dependencies:
