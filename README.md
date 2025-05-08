@@ -6,7 +6,7 @@ Project for discussing and experimenting with different ideas on scoping.
 
 First install dependencies:
 ```bash
-npm run install
+npm install
 ```
 
 In one terminal start the server:
