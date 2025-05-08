@@ -23,7 +23,7 @@
     "server": "node ./node_modules/@freon4dsl/server/dist/server/server-starter.js"
   },
   "devDependencies": {
-    "@freon4dsl/meta": "1.1.0-beta.1",
+    "@freon4dsl/meta": "1.1.0-beta.2",
     "@freon4dsl/server": "1.1.0-beta.0",
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
