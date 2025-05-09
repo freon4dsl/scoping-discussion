@@ -8,7 +8,7 @@ Uses the beta version of Freon, which includes the update to Svelte 5.
 
 First install dependencies:
 ```bash
-npm run install
+npm install
 ```
 
 In one terminal start the server:

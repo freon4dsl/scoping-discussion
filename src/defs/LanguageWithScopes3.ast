@@ -1,0 +1,28 @@
+language StarterLanguage
+
+modelunit StarterUnit3 {
+    modules: LangModule3[];
+}
+
+// The case of multiple hierarchical levels:
+// - each module can contain module definitions inside it
+// - we introduce an intermediate concept of ModuleReference to overcome the shadowing of
+//      modules that we want to use in our variable reference
+// This case still doesn't work: a couple of bugs in the freon scoper
+
+concept LangModule3 implements INamed {
+    reference imports: LangModule3;
+    varDefinitions: Variable[];
+    moduleDefinitions: LangModule3[];
+    varReferences: VarReference3[];
+}
+
+concept VarReference3 {
+    reference target: Variable;
+    module?: ModuleReference;
+}
+
+concept ModuleReference {
+    reference target: LangModule3;
+    // reference module?: LangModule3;
+}
