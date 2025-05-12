@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Jennek uses obsidian for editing .md files
+.obsidian
