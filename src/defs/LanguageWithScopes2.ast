@@ -6,6 +6,7 @@ modelunit StarterUnit2 {
 
 // We introduce an intermediate concept of VariableReference that allows to choose
 // a variable from a specific module, thus we can overcome the variable shadowing
+// and choose a variable from not a local scope
 
 concept LangModule2 implements INamed {
     reference imports: LangModule2;

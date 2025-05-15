@@ -4,7 +4,7 @@ editor qualifiednames precedence 1
 Variable {[${self.name}]}
 
 LangModule1 {[
-    namespace ${self.name} {
+    module ${self.name} {
         import ${self.imports}
         var ${self.varDefinitions horizontal separator[,]}
         ref ${self.varReferences}
@@ -12,7 +12,7 @@ LangModule1 {[
 ]}
 
 LangModule2 {[
-    namespace ${self.name} {
+    module ${self.name} {
         import ${self.imports}
         var ${self.varDefinitions horizontal separator[,]}
         ref ${self.varReferences}
@@ -20,7 +20,16 @@ LangModule2 {[
 ]}
 
 LangModule3 {[
-    namespace ${self.name} {
+    module ${self.name} {
+        import ${self.imports}
+        modules ${self.moduleDefinitions}
+        var ${self.varDefinitions horizontal separator[,]}
+        ref ${self.varReferences}
+    }
+]}
+
+LangModule4 {[
+    module ${self.name} {
         import ${self.imports}
         modules ${self.moduleDefinitions}
         var ${self.varDefinitions horizontal separator[,]}
