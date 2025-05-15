@@ -2,7 +2,8 @@ scoper ExampleScoper for language ExampleLanguage
 
 isnamespace { LangModule1, 
               LangModule2, VarReference2, 
-              LangModule3, VarReference3, ModuleReference }
+              LangModule3, VarReference3, ModuleReference3,
+              LangModule4, VarReference4, ModuleReference4 }
 
 LangModule1 {
     namespace_addition = self.imports;
@@ -28,6 +29,20 @@ VarReference3 {
     namespace_addition = self.module.target;
 }
 
-//ModuleReference {
-//     namespace_addition = self.target;
-//}
+ModuleReference3 {
+     namespace_addition = self.module.target;
+}
+
+// ===================================================================
+
+LangModule4 {
+    namespace_addition = self.imports;
+}
+
+VarReference4 {
+    namespace_addition = self.module.target;
+}
+
+ModuleReference4 {
+     namespace_addition = self.module.target;
+}

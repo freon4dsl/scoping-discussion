@@ -4,6 +4,7 @@ model StarterModel {
     units1: StarterUnit1[];
     units2: StarterUnit2[];
     units3: StarterUnit3[];
+    units4: StarterUnit4[];
 }
 
 interface INamed {
